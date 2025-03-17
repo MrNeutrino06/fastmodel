@@ -1,0 +1,16 @@
+Here is my intial look at library:
+
+fastmodel
+   |__setup.py
+   |__models
+   |   |__ __init__.py
+   |   |__Perceptron.py
+   |   |__RNN.py
+   |   |__CNN.py
+   |   |__Transformer.py
+   |   |__RLAgent.py
+   |__utils
+   |   |__Exceptrion.py
+   |   |   |__(Here should be a lot of exceptrions)
+   |   |__guider.py
+   |   |__numbers.py
