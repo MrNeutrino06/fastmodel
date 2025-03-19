@@ -1,11 +1,10 @@
 As I clarfied in README, this library is supposed to be as simple as possible for devs that barely know anything about AI.
 I want to follow three-lines strategy:
-End-toe-eng fastmodel creation(1),training(2) and deployment(3) should have exactly 3 lines: 
+End-to-end fastmodel creation(1),training(2) and deployment(3) should have exactly 3 lines: 
 
 model = Model(size,task)
-model.train(data)
+model.fit(data)
 model.deploy()
-
 
 
 Here is my intial look at library:
@@ -14,6 +13,7 @@ fastmodel
    |__setup.py
    |__models
    |   |__ __init__.py
+   |   |__Model.py
    |   |__Perceptron.py
    |   |__RNN.py
    |   |__CNN.py
@@ -22,6 +22,14 @@ fastmodel
    |__utils
    |   |__Exceptrion.py
    |   |   |__(Here should be a lot of exceptrions)
-   |   |__guider.py
+   |   |__helper.py
    |   |__numbers.py
+
+All models subclass from Model class,
+which contains basic features for all classes,
+such as - data manipulation, initialisation
+mechanism and training.
+
+task:str Certain amount usages for models
+
 
